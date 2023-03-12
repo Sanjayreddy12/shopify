@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Ubuntu:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat',sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 65px;
+    align-items: center;
+    background-color: blueviolet;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2px;
+    
+}
+nav h1{
+    font-size: 2rem;
+    margin-left: 10px;
+    font-family: 'Ubuntu',sans-serif;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    margin-right: 50px;
+    
+}
+.nav-item:hover{
+    color: #c584fa;
+    cursor: pointer;
+}
+nav ul li{
+    padding: 0 12px;
+    font-size: 1.3rem;
+}
+
+/* home */
+.grid-bar{
+    display: grid;
+    
+    grid-template-columns: 30% 70%;
+    background-color: blueviolet;
+    width:100%;
+}
+.container .card{
+    border-radius: 15px;
+    box-shadow: blueviolet 2px 2px;
+    width: 30%;
+    background-color: aliceblue;
+    
+
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 21px 0;
+}
+.container .card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+    transition: all ease-in-out .3s;
+}
+.container .card:hover{
+    transform:scale(1.03);
+    box-shadow: #c584fa 5px 5px 5px;
+}
+.container .card img{
+    width:100%;
+    height: 300px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 20px;
+    transition: all ease-in-out .3s;
+}
+.container .card a{
+    text-decoration: none;
+    background-color: blueviolet;
+    color: white;
+    font-size: 1.4rem;
+    padding:5px 15px;
+    border-radius: 10px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    
+}
+.container .card a:hover{
+    background-color: #c584fa;
+}
+
+.container h2{
+    margin-bottom: 5px;
+}
+.container h3{
+    margin-bottom: 10px;
+}
+.card p{
+    text-align: center;
+    font-weight: lighter;
+    color: gray;
+    margin-bottom: 5px;
+}
+.menu ul{
+    list-style-type: none;
+    
+}
+.menu a{
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.menu ul a li{
+    color: white;
+    margin:20px;
+    font-size: 2.5rem;
+    transition: all ease-in-out .1s;
+    padding: 5px 20px;
+    
+    
+}
+.menu a:first-of-type li:first-child{
+    border: solid white 5px;
+    border-radius:20px;
+}
+
+.menu ul a li:hover{
+       color: #c584fa;
+       
+}
+.menu ul a li:hover{
+      
+      border: solid white 5px;
+      border-radius: 20px; 
+}
+.menu ul {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+    
+}
+
+/* POP UP */
+
+.pop-up{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding-top: 50px;
+    
+}
+
+.sth {
+
+    background-color: blueviolet;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    border-radius: 10px;
+    height: 200px;
+    width: 50%; 
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color:white;
+    align-items: center;
+    
+  }
+  .pop-up button{
+    font-size: 4rem;
+    background-color: white;
+    border: none;
+    color: blueviolet;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+
+  }
+  .pop-up button:hover{
+    color: #c584fa;
+    cursor: pointer;
+  }
+
+
+
+/* CLOSE POP UP */
+
+.footer{
+    background-color: blueviolet;
+    color: white;
+    height: 100px;
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer p{
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+.footer p:hover{
+
+    color:#c584fa;
+
+}
+.footer .icons{
+    display: flex;
+    
+}
+.footer .icons a{
+    margin: 10px;
+    color: white;
+}

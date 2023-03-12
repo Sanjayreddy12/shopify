@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Market</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/49ccdd1f1f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  
+       <nav id="nav-bar">
+        <h1>Shopify</h1>
+        <ul class="nav-items">
+            <li class="nav-item">Fitness</li>
+            <li class="nav-item">SkinCare</li>
+            <li class="nav-item">Drinks</li>
+        </ul>
+       </nav>
+
+
+       <!-- main section -->
+
+    <section id="Home">
+
+
+        <div class="grid-bar">
+
+            
+
+            <div class="menu">
+                <ul class="categories">
+                    <a href="index.html"> <li class="item">fitness</li> </a>
+                    <a href="skinCare.html"> <li class="item">SkinCare</li> </a>
+                    <a href="drinks.html"> <li class="item">Drinks</li> </a>
+                </ul>
+            </div>
+
+        
+
+         <div class="container">
+
+            <div class="card">
+                <img src="muscle-grip.jpg" alt="img">
+                <h2>Arm Grip</h2>
+                <h3>Status: Available</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum odio eveniet veritatis illo unde assumenda repellat nostrum id. Autem, magni.</p>
+                <a href="#" onclick="calculate()">Buy</a>
+            </div>
+
+            <div class="card">
+                <img src="dumbell.jpg" alt="img">
+                <h2>Dumbells-25kg</h2>
+                <h3>Status: Available</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum odio eveniet veritatis illo unde assumenda repellat nostrum id. Autem, magni.</p>
+                <a href="#" onclick="calculate()">Buy</a>
+            </div>
+
+            <div class="card">
+                <img src="treadmill.jpg" alt="img">
+                <h2>PTM40S tread mill</h2>
+                <h3>Status: Available</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum odio eveniet veritatis illo unde assumenda repellat nostrum id. Autem, magni.</p>
+                <a href="#" onclick="calculate()">Buy</a>
+            </div>
+
+         </div>
+
+        </div>
+        
+    </section>
+ <!-- End -->
+
+ 
+
+    <div class="pop-up">
+        <button onclick="document.querySelector('.pop-up').style.visibility='hidden';"><i class="fa-solid fa-xmark"></i></button>
+        <form class="sth">
+            <label for="quantity">No.of.items</label>
+            <input id="quantity" type="range" name="range" value="0" min="1" max="100">
+
+            <div class="no-of-items">
+                <span>no-of-items :</span>
+            </div>
+            <h3>cost(per item): 10$</h3>
+            <h2 class="total">Total cost :</h2>
+            
+        </form>
+        
+     </div>
+
+ 
+ <!-- <div class="pop-up">
+    <form>
+        <label for="quantity">No.of.items</label>
+        <input id="quantity" type="range" name="range" value="0" min="1" max="100">
+        
+    </form>
+    <div class="no-of-items">
+        <span>no-of-items :</span>
+    </div>
+    <h3>cost(per item): 10$</h3>
+    <h2 class="total">Total cost :</h2>
+ </div> -->
+
+
+
+ <footer id="footer">
+    <div class="footer">
+        <p>SanjayReddy@AllRightsReserved</p>
+
+        <div class="icons">
+
+            <a href="#"> <i class="fa-brands fa-linkedin fa-2x"></i> </a>
+            <a href="#"> <i class="fa-brands fa-square-facebook fa-2x"></i> </a>
+            <a href="#"> <i class="fa-brands fa-square-twitter fa-2x"></i> </a>
+
+        </div>
+        
+    </div>
+    
+ </footer>
+
+
+  
+ <script src="app.js"></script>
+</body>
+
+</html>
